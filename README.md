@@ -1,9 +1,9 @@
 # Bastón inteligente para personas no videntes.
 > **Asignatura:** Electrónica Digital II - Universidad Nacional de Córdoba
 > * **Integrantes:**
-> * GLADES, LUCILA JAZMIN
-> * LOSSANI BUFE, GRECIA AZUL
-> * SANTESSO, CANDELA
+> - GLADES, LUCILA JAZMIN
+> - LOSSANI BUFE, GRECIA AZUL
+> - SANTESSO, CANDELA
 > * **Profesor:** Blasco, Marcos Javier
 
 ---
@@ -15,14 +15,14 @@ El objetivo del sistema es brindar una advertencia temprana ante la presencia de
 
 ### Alcances del Proyecto.
 * **El sistema es capaz de:**
-* - Medir la distancia a los obstáculos mediante un sensor infrarrojo.
-* - Mostrar en displays la distancia medida y el modo de funcionamiento seleccionado.
+ - Medir la distancia a los obstáculos mediante un sensor infrarrojo.
+ - Mostrar en displays la distancia medida y el modo de funcionamiento seleccionado.
   - Permitir seleccionar modo Casa o Calle.
   - Configurar manualmente la distancia de alerta.
   - Activar una señal de advertencia cuando la distancia al obstáculo es mayor que la configurada.
   - Enviar información del estado del sistema y de la distancia medida por UART.
 * **El sistema NO incluye (Fuera de alcance):**
-* - Detección del tipo de obstáculo.
+  - Detección del tipo de obstáculo.
   - Reconocimiento de desniveles del terreno.
   - Almacenamiento de datos o historial de mediciones.
   - Conectividad inalámbrica (Wi-Fi o Bluetooth).
