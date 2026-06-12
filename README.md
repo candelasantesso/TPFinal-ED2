@@ -1,9 +1,9 @@
-# [Bastón inteligente para personas no videntes.]
-> **Asignatura:** Electrónica Digital [II] - Universidad Nacional de Córdoba
+# Bastón inteligente para personas no videntes.
+> **Asignatura:** Electrónica Digital II - Universidad Nacional de Córdoba
 > **Integrantes:** > * GLADES, LUCILA JAZMIN
 > * LOSSANI BUFE, GRECIA AZUL
 > * SANTESSO, CANDELA
-> **Profesor:** [Blasco, Marcos Javier]
+> **Profesor:** Blasco, Marcos Javier
 
 ---
 
@@ -13,17 +13,17 @@ El sistema consiste en un bastón inteligente para personas no videntes que dete
 El objetivo del sistema es brindar una advertencia temprana ante la presencia de obstáculos, mejorando la seguridad durante el desplazamiento. Cuando la distancia medida es mayor que la configurada, el microcontrolador activa una señal de aviso mediante un motor vibrador (o un buzzer, según la implementación final), proporcionando al usuario una alerta que facilita una movilidad más segura y autónoma.
 
 ### 🎯 Alcances del Proyecto.
-* **El sistema SÍ es capaz de:** [Medir la distancia a los obstáculos mediante un sensor infrarrojo. mostrar en los displays la distancia medida o el modo de funcionamiento seleccionado.
-permitir seleccionar el modo Casa o Calle, configurar manualmente la distancia de alerta, activar una señal de advertencia cuando la distancia al obstáculo es mayor que la configurada, enviar información del estado del sistema y de la distancia medida por UART.].
-* **El sistema NO incluye (Fuera de alcance):** [Detección del tipo de obstáculo, reconocimiento de desniveles del terreno, almacenamiento de datos o historial de mediciones, conectividad inalámbrica (Wi-Fi o Bluetooth)].
+* **El sistema SÍ es capaz de:** Medir la distancia a los obstáculos mediante un sensor infrarrojo. mostrar en los displays la distancia medida o el modo de funcionamiento seleccionado.
+permitir seleccionar el modo Casa o Calle, configurar manualmente la distancia de alerta, activar una señal de advertencia cuando la distancia al obstáculo es mayor que la configurada, enviar información del estado del sistema y de la distancia medida por UART.
+* **El sistema NO incluye (Fuera de alcance):** Detección del tipo de obstáculo, reconocimiento de desniveles del terreno, almacenamiento de datos o historial de mediciones, conectividad inalámbrica (Wi-Fi o Bluetooth).
 
 ### ⏩ Posibles Etapas Siguientes (Líneas Futuras)
 Planteen cómo escalaría este desarrollo en una versión 2.0 o en un ámbito profesional:
-* [Reducir el tamaño del circuito integrando los componentes en una única placa, facilitando su incorporación dentro del bastón y mejorando la portabilidad.].
-* [Incorporar una batería recargable y un sistema de bajo consumo para aumentar la autonomía del dispositivo.].
-* [Agregar conectividad Bluetooth o una aplicación móvil para configurar el sistema y monitorear su funcionamiento de forma inalámbrica.].
-* [Incorporar sensores adicionales para mejorar la detección de obstáculos y reducir errores de medición del sensor infrarrojo.]
----
+* Reducir el tamaño del circuito integrando los componentes en una única placa, facilitando su incorporación dentro del bastón y mejorando la portabilidad.
+* Incorporar una batería recargable y un sistema de bajo consumo para aumentar la autonomía del dispositivo.
+* Agregar conectividad Bluetooth o una aplicación móvil para configurar el sistema y monitorear su funcionamiento de forma inalámbrica.
+* Incorporar sensores adicionales para mejorar la detección de obstáculos y reducir errores de medición del sensor infrarrojo.
+--
 
 ## 📐 2. Arquitectura del Sistema: Hardware y Software (Común)
 
@@ -45,14 +45,14 @@ Como consideraciones de diseño, se utilizaron etapas de adaptación entre los d
 ## ⚡ 3. Especificaciones Eléctricas, Alimentación y Entorno (Específico por Asignatura)
 
 ### 🔌 Parámetros de Alimentación y Consumo (Común a ambas materias)
-* **Tensión de operación del sistema:** [5 V para PIC; 3 V para motor vibrador.]
-* **Método de alimentación:** [Alimentación por USB (5 V)]
+* **Tensión de operación del sistema:** 5 V para PIC; 3 V para motor vibrador.
+* **Método de alimentación:** Alimentación por USB (5 V).
 * **Consumo estimado o medido:** * En modo activo (motor/buzzer encendido y displays en funcionamiento): aproximadamente 150–250 mA, (dependiendo del consumo del motor y de los displays).
 Modo de espera (sin activación del motor): aproximadamente 50–80 mA.
-* **Herramientas de Software:** MPLAB X IDE [v5.35] y compilador XC8 [vX.XX].
-* **Hardware de Programación/Depuración:** [PICkit 3].
+* **Herramientas de Software:** MPLAB X IDE v5.35 y compilador XC8 [vX.XX].
+* **Hardware de Programación/Depuración:** PICkit 3.
 * **Configuración de Bits (Fuses Críticos):**
-  * *Oscilador:* [Ej: HS (Cristal interno de 4MHz)]
+  * *Oscilador:* HS (Cristal interno de 4MHz)
   * *Watchdog Timer (WDT):* OFF
   * *Master Clear (MCLRE):* [Ej: ON (Pin externo) / OFF (Digital IO)]
 * **Periféricos Internos Utilizados:** ADC, EUSART (UART), módulo PWM y temporizadores (Tmr0 y TMR2??).
@@ -60,8 +60,7 @@ Modo de espera (sin activación del motor): aproximadamente 50–80 mA.
 
 ---
 
-## 🔄 4. Proceso de Integración y Desarrollo (Común)
-Describan cronológicamente cómo fueron sumando y testeando las diferentes partes del proyecto (enfoque modular de ingeniería).
+## 🔄 4. Proceso de Integración y Desarrollo.
 
 * **Etapa 1 (Validación inicial):**   Configuración del oscilador del PIC e inicializacion de variables.
 * **Etapa 2 (Adquisición/Comunicación):** Implementación del módulo ADC y validación de las mediciones mediante el encendido de LEDs según el valor detectado. 
