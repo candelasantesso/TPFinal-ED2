@@ -1,6 +1,6 @@
 # Bastón inteligente para personas no videntes.
 > **Asignatura:** Electrónica Digital II - Universidad Nacional de Córdoba
-> **Integrantes:**
+> * **Integrantes:**
 > * GLADES, LUCILA JAZMIN
 > * LOSSANI BUFE, GRECIA AZUL
 > * SANTESSO, CANDELA
