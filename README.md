@@ -1,23 +1,24 @@
 # Bastón inteligente para personas no videntes.
 > **Asignatura:** Electrónica Digital II - Universidad Nacional de Córdoba
-> **Integrantes:** > * GLADES, LUCILA JAZMIN
+> **Integrantes:**
+> * GLADES, LUCILA JAZMIN
 > * LOSSANI BUFE, GRECIA AZUL
 > * SANTESSO, CANDELA
-> **Profesor:** Blasco, Marcos Javier
+> * **Profesor:** Blasco, Marcos Javier
 
 ---
 
-## 🚀 1. Descripción General del Proyecto.
+## 1. Descripción General del Proyecto.
 El sistema consiste en un bastón inteligente para personas no videntes que detecta la distancia a los obstáculos mediante un sensor infrarrojo Sharp y procesa la información con un microcontrolador PIC. A través de la comunicación UART, el usuario puede seleccionar el modo Casa o Calle, visualizar la distancia medida o configurar manualmente la distancia de alerta. Los displays muestran el modo seleccionado o el valor configurado en cada momento.
 
 El objetivo del sistema es brindar una advertencia temprana ante la presencia de obstáculos, mejorando la seguridad durante el desplazamiento. Cuando la distancia medida es mayor que la configurada, el microcontrolador activa una señal de aviso mediante un motor vibrador (o un buzzer, según la implementación final), proporcionando al usuario una alerta que facilita una movilidad más segura y autónoma.
 
-### 🎯 Alcances del Proyecto.
+### Alcances del Proyecto.
 * **El sistema SÍ es capaz de:** Medir la distancia a los obstáculos mediante un sensor infrarrojo. mostrar en los displays la distancia medida o el modo de funcionamiento seleccionado.
 permitir seleccionar el modo Casa o Calle, configurar manualmente la distancia de alerta, activar una señal de advertencia cuando la distancia al obstáculo es mayor que la configurada, enviar información del estado del sistema y de la distancia medida por UART.
 * **El sistema NO incluye (Fuera de alcance):** Detección del tipo de obstáculo, reconocimiento de desniveles del terreno, almacenamiento de datos o historial de mediciones, conectividad inalámbrica (Wi-Fi o Bluetooth).
 
-### ⏩ Posibles Etapas Siguientes (Líneas Futuras)
+### Posibles Etapas Siguientes (Líneas Futuras)
 Planteen cómo escalaría este desarrollo en una versión 2.0 o en un ámbito profesional:
 * Reducir el tamaño del circuito integrando los componentes en una única placa, facilitando su incorporación dentro del bastón y mejorando la portabilidad.
 * Incorporar una batería recargable y un sistema de bajo consumo para aumentar la autonomía del dispositivo.
@@ -25,9 +26,9 @@ Planteen cómo escalaría este desarrollo en una versión 2.0 o en un ámbito pr
 * Incorporar sensores adicionales para mejorar la detección de obstáculos y reducir errores de medición del sensor infrarrojo.
 --
 
-## 📐 2. Arquitectura del Sistema: Hardware y Software (Común)
+## 2. Arquitectura del Sistema: Hardware y Software (Común)
 
-### 🔌 Hardware & Interconexión
+### Hardware & Interconexión
 * **Diagrama de Bloques:** [Insertar imagen o link al diagrama de bloques del hardware]
 * **Esquemático del Circuito:** *[Inserte aquí la captura de imagen/render del esquemático completo desarrollado en KiCad/Altium]*
   `![Esquemático Completo](hardware/esquematico.png)`
@@ -36,15 +37,15 @@ Planteen cómo escalaría este desarrollo en una versión 2.0 o en un ámbito pr
 
 Como consideraciones de diseño, se utilizaron etapas de adaptación entre los distintos módulos y una etapa de potencia para accionar el motor vibrador (o buzzer) mediante PWM. Además, se contempla el uso de un diodo de protección para absorber los picos de tensión generados por la carga inductiva del motor y garantizar un funcionamiento seguro del circuito.
 
-### 💻 Arquitectura de Software (Firmware)
+### Arquitectura de Software (Firmware)
 * **Diagrama de Flujo o Máquina de Estados:** *[Inserte aquí la imagen del diagrama que explique el lazo principal o el comportamiento del sistema]*
   `![Diagrama de Flujo / Máquina de Estados](docs/diagrama_software.png)`
 
 ---
 
-## ⚡ 3. Especificaciones Eléctricas, Alimentación y Entorno (Específico por Asignatura)
+## 3. Especificaciones Eléctricas, Alimentación y Entorno (Específico por Asignatura)
 
-### 🔌 Parámetros de Alimentación y Consumo (Común a ambas materias)
+### Parámetros de Alimentación y Consumo (Común a ambas materias)
 * **Tensión de operación del sistema:** 5 V para PIC; 3 V para motor vibrador.
 * **Método de alimentación:** Alimentación por USB (5 V).
 * **Consumo estimado o medido:** * En modo activo (motor/buzzer encendido y displays en funcionamiento): aproximadamente 150–250 mA, (dependiendo del consumo del motor y de los displays).
@@ -60,7 +61,7 @@ Modo de espera (sin activación del motor): aproximadamente 50–80 mA.
 
 ---
 
-## 🔄 4. Proceso de Integración y Desarrollo.
+## 4. Proceso de Integración y Desarrollo.
 
 * **Etapa 1 (Validación inicial):**   Configuración del oscilador del PIC e inicializacion de variables.
 * **Etapa 2 (Adquisición/Comunicación):** Implementación del módulo ADC y validación de las mediciones mediante el encendido de LEDs según el valor detectado. 
@@ -69,7 +70,7 @@ Modo de espera (sin activación del motor): aproximadamente 50–80 mA.
 
 ---
 
-## 📊 5. Ensayos, Pruebas y Resultados (Común)
+## 5. Ensayos, Pruebas y Resultados (Común)
 Demuestren con datos empíricos que el sistema funciona correctamente. **Es obligatorio incluir registro visual**.
 
 * **Pruebas Funcionales Realizadas:** Detallen los ensayos (Ej: "Se inyectó una señal controlada para medir la precisión del ADC...").
@@ -78,7 +79,7 @@ Demuestren con datos empíricos que el sistema funciona correctamente. **Es obli
 
 ---
 
-## 📂 6. Estructura del Repositorio (Común)
+## 6. Estructura del Repositorio (Común)
 El repositorio debe mantener obligatoriamente la siguiente estructura limpia (¡Recuerden configurar correctamente el `.gitignore` para no subir carpetas temporales como `Debug/`, `Release/` o archivos `.p1` / `.d`!).
 
 ```text
