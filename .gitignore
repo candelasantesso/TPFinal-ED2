@@ -1,0 +1,21 @@
+# --- Temporales de Compiladores (MPLAB X, MCUXpresso, STM32Cube) ---
+**/Debug/
+**/Release/
+debug/
+release/
+*.p1
+*.d
+*.o
+*.elf
+*.hex
+*.cof
+*.map
+*.su
+*.dwo
+
+# --- Archivos de diseño (KiCad / Altium) ---
+*.bak
+*.old
+*-bak
+*~
+*.orig
