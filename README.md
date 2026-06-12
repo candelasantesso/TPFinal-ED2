@@ -14,12 +14,21 @@ El sistema consiste en un bastón inteligente para personas no videntes que dete
 El objetivo del sistema es brindar una advertencia temprana ante la presencia de obstáculos, mejorando la seguridad durante el desplazamiento. Cuando la distancia medida es mayor que la configurada, el microcontrolador activa una señal de aviso mediante un motor vibrador (o un buzzer, según la implementación final), proporcionando al usuario una alerta que facilita una movilidad más segura y autónoma.
 
 ### Alcances del Proyecto.
-* **El sistema SÍ es capaz de:** Medir la distancia a los obstáculos mediante un sensor infrarrojo. mostrar en los displays la distancia medida o el modo de funcionamiento seleccionado.
-permitir seleccionar el modo Casa o Calle, configurar manualmente la distancia de alerta, activar una señal de advertencia cuando la distancia al obstáculo es mayor que la configurada, enviar información del estado del sistema y de la distancia medida por UART.
-* **El sistema NO incluye (Fuera de alcance):** Detección del tipo de obstáculo, reconocimiento de desniveles del terreno, almacenamiento de datos o historial de mediciones, conectividad inalámbrica (Wi-Fi o Bluetooth).
+* **El sistema es capaz de:**
+* - Medir la distancia a los obstáculos mediante un sensor infrarrojo.
+* - Mostrar en displays la distancia medida y el modo de funcionamiento seleccionado.
+  - Permitir seleccionar modo Casa o Calle.
+  - Configurar manualmente la distancia de alerta.
+  - Activar una señal de advertencia cuando la distancia al obstáculo es mayor que la configurada.
+  - Enviar información del estado del sistema y de la distancia medida por UART.
+* **El sistema NO incluye (Fuera de alcance):**
+* - Detección del tipo de obstáculo.
+  - Reconocimiento de desniveles del terreno.
+  - Almacenamiento de datos o historial de mediciones.
+  - Conectividad inalámbrica (Wi-Fi o Bluetooth).
 
 ### Posibles Etapas Siguientes (Líneas Futuras)
-Planteen cómo escalaría este desarrollo en una versión 2.0 o en un ámbito profesional:
+
 * Reducir el tamaño del circuito integrando los componentes en una única placa, facilitando su incorporación dentro del bastón y mejorando la portabilidad.
 * Incorporar una batería recargable y un sistema de bajo consumo para aumentar la autonomía del dispositivo.
 * Agregar conectividad Bluetooth o una aplicación móvil para configurar el sistema y monitorear su funcionamiento de forma inalámbrica.
