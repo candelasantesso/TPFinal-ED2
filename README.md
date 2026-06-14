@@ -38,8 +38,8 @@ El objetivo del sistema es brindar una advertencia temprana ante la presencia de
 ## 2. Arquitectura del Sistema: Hardware y Software (Común)
 
 ### Hardware & Interconexión
-* **Diagrama de Bloques:** [Insertar imagen o link al diagrama de bloques del hardware]
-* **Esquemático del Circuito:** *[Inserte aquí la captura de imagen/render del esquemático completo desarrollado en KiCad/Altium]*
+ * **Diagrama de Bloques:** Muestra cómo están conectados los distintos módulos electrónicos del sistema y cómo circula la información entre ellos. Es una vista general, sin entrar en detalles de conexiones pin a pin. ¿Qué componentes tiene el sistema y cómo se comunican entre sí? [Insertar imagen o link al diagrama de bloques del hardware]
+* **Esquemático del Circuito:** PROTEUS CAPTURA *[Inserte aquí la captura de imagen/render del esquemático completo desarrollado en KiCad/Altium]*
   `![Esquemático Completo](hardware/esquematico.png)`
 * **Descripción del Circuito y Consideraciones de Diseño:**
 * Circuito compuesto por un microcontrolador PIC que recibe la señal analógica del sensor infrarrojo Sharp a través del conversor ADC, procesa la distancia medida y controla las salidas del sistema. Mediante la comunicación UART se reciben los comandos de configuración enviados desde la computadora, mientras que los displays de siete segmentos muestran el modo de funcionamiento o la distancia configurada.
@@ -47,7 +47,7 @@ El objetivo del sistema es brindar una advertencia temprana ante la presencia de
 Como consideraciones de diseño, se utilizaron etapas de adaptación entre los distintos módulos y una etapa de potencia para accionar el motor vibrador (o buzzer) mediante PWM. Además, se contempla el uso de un diodo de protección para absorber los picos de tensión generados por la carga inductiva del motor y garantizar un funcionamiento seguro del circuito.
 
 ### Arquitectura de Software (Firmware)
-* **Diagrama de Flujo o Máquina de Estados:** *[Inserte aquí la imagen del diagrama que explique el lazo principal o el comportamiento del sistema]*
+* **Diagrama de Flujo o Máquina de Estados:** DIAGRAMA DE FLUJOS Q HAY EN CANVA *[Inserte aquí la imagen del diagrama que explique el lazo principal o el comportamiento del sistema]*
   `![Diagrama de Flujo / Máquina de Estados](docs/diagrama_software.png)`
 
 ---
