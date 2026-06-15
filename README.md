@@ -9,7 +9,7 @@
 ---
 
 ## 1. Descripción General del Proyecto.
-El sistema consiste en un bastón inteligente para personas no videntes que detecta la distancia a los obstáculos mediante un sensor infrarrojo Sharp y procesa la información con un microcontrolador PIC. A través de la comunicación UART, el usuario puede seleccionar una distancia de alerta mediante el modo Casa o Calle y visualizar la distancia medida. Los displays muestran el modo seleccionado o el valor medido en cada momento.
+El sistema consiste en un bastón inteligente para personas no videntes que detecta la distancia a los obstáculos mediante un sensor infrarrojo Sharp y procesa la información con un microcontrolador PIC. A través de la comunicación UART, el usuario puede seleccionar una distancia de alerta mediante el modo Casa o Calle, configurar una distancia manual y visualizar la distancia medida. Los displays muestran el modo seleccionado o el valor medido en cada momento.
 
 El objetivo del sistema es brindar una advertencia temprana ante la presencia de obstáculos, mejorando la seguridad durante el desplazamiento de la persona. Cuando la distancia medida es mayor a la configurada, el microcontrolador activa una señal de aviso mediante un motor vibrador (o un buzzer, según la implementación final), proporcionando al usuario una alerta que facilita una movilidad más segura y autónoma.
 
@@ -17,11 +17,12 @@ El objetivo del sistema es brindar una advertencia temprana ante la presencia de
 * **El sistema es capaz de:**
  - Medir la distancia a los obstáculos mediante un sensor infrarrojo.
  - Mostrar en displays la distancia medida y el modo de funcionamiento seleccionado.
+ - Configurar manualmente la distancia de alerta.
+ - Mostrar cuando el usuario seleccione una distancia incorrecta.
   - Permitir seleccionar modo Casa o Calle.
   - Activar una señal de advertencia cuando la distancia al obstáculo es mayor que la configurada.
   - Enviar información del estado del sistema y de la distancia medida por UART.
 * **El sistema NO incluye (Fuera de alcance):**
-  - Configurar manualmente la distancia de alerta.
   - Detección del tipo de obstáculo.
   - Reconocimiento de desniveles del terreno.
   - Almacenamiento de datos o historial de mediciones.
@@ -39,8 +40,9 @@ El objetivo del sistema es brindar una advertencia temprana ante la presencia de
 
 ### Hardware & Interconexión
  * **Diagrama de Bloques:** Muestra cómo están conectados los distintos módulos electrónicos del sistema y cómo circula la información entre ellos. Es una vista general, sin entrar en detalles de conexiones pin a pin. ¿Qué componentes tiene el sistema y cómo se comunican entre sí? [Insertar imagen o link al diagrama de bloques del hardware]
-* **Esquemático del Circuito:** PROTEUS CAPTURA *[Inserte aquí la captura de imagen/render del esquemático completo desarrollado en KiCad/Altium]*
-  `![Esquemático Completo](hardware/esquematico.png)`
+* **Esquemático del Circuito:** *[Inserte aquí la captura de imagen/render del esquemático completo desarrollado en KiCad/Altium]*
+  `![Esquemático Completo](hardware/esquematico.png)
+
 * **Descripción del Circuito y Consideraciones de Diseño:**
 * Circuito compuesto por un microcontrolador PIC que recibe la señal analógica del sensor infrarrojo Sharp a través del conversor ADC, procesa la distancia medida y controla las salidas del sistema. Mediante la comunicación UART se reciben los comandos de configuración enviados desde la computadora, mientras que los displays de siete segmentos muestran el modo de funcionamiento o la distancia configurada.
 
