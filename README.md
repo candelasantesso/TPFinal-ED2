@@ -9,23 +9,23 @@
 ---
 
 ## 1. Descripción General del Proyecto.
-El sistema consiste en un bastón inteligente para personas no videntes que detecta la distancia a los obstáculos mediante un sensor infrarrojo Sharp y procesa la información con un microcontrolador PIC. A través de la comunicación UART, el usuario puede seleccionar el modo Casa o Calle, visualizar la distancia medida o configurar manualmente la distancia de alerta. Los displays muestran el modo seleccionado o el valor configurado en cada momento.
+El sistema consiste en un bastón inteligente para personas no videntes que detecta la distancia a los obstáculos mediante un sensor infrarrojo Sharp y procesa la información con un microcontrolador PIC. A través de la comunicación UART, el usuario puede seleccionar una distancia de alerta mediante el modo Casa o Calle y visualizar la distancia medida. Los displays muestran el modo seleccionado o el valor medido en cada momento.
 
-El objetivo del sistema es brindar una advertencia temprana ante la presencia de obstáculos, mejorando la seguridad durante el desplazamiento. Cuando la distancia medida es mayor que la configurada, el microcontrolador activa una señal de aviso mediante un motor vibrador (o un buzzer, según la implementación final), proporcionando al usuario una alerta que facilita una movilidad más segura y autónoma.
+El objetivo del sistema es brindar una advertencia temprana ante la presencia de obstáculos, mejorando la seguridad durante el desplazamiento de la persona. Cuando la distancia medida es mayor a la configurada, el microcontrolador activa una señal de aviso mediante un motor vibrador (o un buzzer, según la implementación final), proporcionando al usuario una alerta que facilita una movilidad más segura y autónoma.
 
 ### Alcances del Proyecto.
 * **El sistema es capaz de:**
  - Medir la distancia a los obstáculos mediante un sensor infrarrojo.
  - Mostrar en displays la distancia medida y el modo de funcionamiento seleccionado.
   - Permitir seleccionar modo Casa o Calle.
-  - Configurar manualmente la distancia de alerta.
   - Activar una señal de advertencia cuando la distancia al obstáculo es mayor que la configurada.
   - Enviar información del estado del sistema y de la distancia medida por UART.
 * **El sistema NO incluye (Fuera de alcance):**
+  - Configurar manualmente la distancia de alerta.
   - Detección del tipo de obstáculo.
   - Reconocimiento de desniveles del terreno.
   - Almacenamiento de datos o historial de mediciones.
-  - Conectividad inalámbrica (Wi-Fi o Bluetooth).
+  - Brindar conectividad inalámbrica (mediante Wi-Fi o Bluetooth).
 
 ### Posibles Etapas Siguientes (Líneas Futuras)
 
