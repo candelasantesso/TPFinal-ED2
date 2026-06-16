@@ -40,7 +40,8 @@ El objetivo del sistema es brindar una advertencia temprana ante la presencia de
 
 ### Hardware & Interconexión
  * **Diagrama de Bloques:** Muestra cómo están conectados los distintos módulos electrónicos del sistema y cómo circula la información entre ellos. Es una vista general, sin entrar en detalles de conexiones pin a pin. ¿Qué componentes tiene el sistema y cómo se comunican entre sí? ![Diagrama de Bloques del Hardware](hardware/DIAGRAMA%20DE%20BLOQUES.png)
-* **Esquemático del Circuito:** *[Inserte aquí la captura de imagen/render del esquemático completo desarrollado en KiCad/Altium]*
+* **Esquemático del Circuito:** Esquematico desarrollado en el software Proteus 8 Professional del circuito a desarrollar.
+* **ACLARACIÓN:** El sensor Sharp fue reemplazado por un potenciómetro que simule su señal ya que el mismo no se encuentra como parte de la librería de Proteus.
   `![Esquemático Completo](hardware/esquematico.png)
 
 * **Descripción del Circuito y Consideraciones de Diseño:**
