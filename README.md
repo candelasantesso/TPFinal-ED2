@@ -44,8 +44,8 @@ Esta sección presenta la arquitectura de hardware del sistema desarrollado, des
  * **Diagrama de Bloques:**
 Muestra la estructura general del sistema, identificando los distintos módulos que lo integran y la comunicación existente entre ellos. Su objetivo es brindar una visión global del funcionamiento del hardware sin detallar las conexiones eléctricas específicas. ![Diagrama de Bloques del Hardware](hardware/DIAGRAMA%20DE%20BLOQUES.png)
 * **Esquemático del Circuito:** Circuito esquemático completo del circuito, desarrollado en Proteus 8 Professional, donde se representan las conexiones entre todos los componentes electrónicos que conforman el sistema.
-* **Aclaración:** El sensor Sharp fue reemplazado por un potenciómetro que simule su señal ya que el mismo no se encuentra como parte de la librería de Proteus.
-  `![Esquemático Completo](hardware/esquematico.png)
+  - **Aclaración:** El sensor Sharp fue reemplazado por un potenciómetro que simule su señal ya que el mismo no se encuentra como parte de la librería de Proteus.
+  ![Esquemático Completo](hardware/esquematico.png)
 
 * **Descripción del Circuito y Consideraciones de Diseño:**
 Circuito compuesto por un microcontrolador PIC que recibe la señal analógica del sensor infrarrojo Sharp a través del conversor ADC, procesa la distancia medida y controla las salidas del sistema. Mediante la comunicación UART se reciben los comandos de configuración enviados desde la computadora, mientras que los displays de siete segmentos muestran el modo de funcionamiento o la distancia configurada.
