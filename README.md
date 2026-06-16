@@ -9,9 +9,9 @@
 ---
 
 ## 1. Descripción General del Proyecto.
-El sistema consiste en un bastón inteligente para personas no videntes que detecta la distancia a los obstáculos mediante un sensor infrarrojo Sharp y procesa la información con un microcontrolador PIC. A través de la comunicación UART, el usuario puede seleccionar una distancia de alerta mediante el modo Casa o Calle, configurar una distancia manual y visualizar la distancia medida. Los displays muestran el modo seleccionado o el valor medido en cada momento.
+Este proyecto consiste en el diseño de un bastón inteligente orientado a asistir en el desplazamiento de personas con discapacidad visual. Su funcionamiento permite detectar la distancia a los obstáculos mediante un sensor infrarrojo Sharp y procesa la información a través de un microcontrolador PIC. Esto se complementa con la comunicación UART, con la que el usuario puede seleccionar una distancia de alerta mediante el modo Casa o Calle, configurar una distancia manual y visualizar la distancia medida. Los displays muestran el modo seleccionado o el valor medido en cada momento.
 
-El objetivo del sistema es brindar una advertencia temprana ante la presencia de obstáculos, mejorando la seguridad durante el desplazamiento de la persona. Cuando la distancia medida es mayor a la configurada, el microcontrolador activa una señal de aviso mediante un motor vibrador, proporcionando al usuario una alerta que facilita una movilidad más segura y autónoma.
+El objetivo del sistema es brindar una advertencia temprana ante la presencia de obstáculos, mejorando la seguridad durante el desplazamiento de la persona. Cuando la distancia medida es menor a la configurada, el microcontrolador activa una señal de aviso mediante un motor vibrador accionado con PWM, proporcionando al usuario una alerta que facilita una movilidad más segura y autónoma.
 
 ### Alcances del Proyecto.
 * **El sistema es capaz de:**
@@ -39,9 +39,12 @@ El objetivo del sistema es brindar una advertencia temprana ante la presencia de
 ## 2. Arquitectura del Sistema: Hardware y Software (Común)
 
 ### Hardware & Interconexión
- * **Diagrama de Bloques:** Muestra cómo están conectados los distintos módulos electrónicos del sistema y cómo circula la información entre ellos. Es una vista general, sin entrar en detalles de conexiones pin a pin. ¿Qué componentes tiene el sistema y cómo se comunican entre sí? ![Diagrama de Bloques del Hardware](hardware/DIAGRAMA%20DE%20BLOQUES.png)
-* **Esquemático del Circuito:** Esquematico desarrollado en el software Proteus 8 Professional del circuito a desarrollar.
-* **ACLARACIÓN:** El sensor Sharp fue reemplazado por un potenciómetro que simule su señal ya que el mismo no se encuentra como parte de la librería de Proteus.
+Esta sección presenta la arquitectura de hardware del sistema desarrollado, describiendo los módulos electrónicos que lo componen, la forma en que se interconectan y el flujo de información entre ellos. Además, se incluyen el diagrama de bloques, el esquemático del circuito y las principales consideraciones adoptadas durante el diseño.
+
+ * **Diagrama de Bloques:**
+Muestra la estructura general del sistema, identificando los distintos módulos que lo integran y la comunicación existente entre ellos. Su objetivo es brindar una visión global del funcionamiento del hardware sin detallar las conexiones eléctricas específicas. ![Diagrama de Bloques del Hardware](hardware/DIAGRAMA%20DE%20BLOQUES.png)
+* **Esquemático del Circuito:** Circuito esquemático completo del circuito, desarrollado en Proteus 8 Professional, donde se representan las conexiones entre todos los componentes electrónicos que conforman el sistema.
+* **Aclaración:** El sensor Sharp fue reemplazado por un potenciómetro que simule su señal ya que el mismo no se encuentra como parte de la librería de Proteus.
   `![Esquemático Completo](hardware/esquematico.png)
 
 * **Descripción del Circuito y Consideraciones de Diseño:**
@@ -50,8 +53,7 @@ Circuito compuesto por un microcontrolador PIC que recibe la señal analógica d
 Como consideraciones de diseño, se utilizaron etapas de adaptación entre los distintos módulos y una etapa de potencia para accionar el motor vibrador mediante PWM. Además, se contempla el uso de un diodo de protección para absorber los picos de tensión generados por la carga inductiva del motor y garantizar un funcionamiento seguro del circuito.
 
 ### Arquitectura de Software (Firmware)
-* **Diagrama de Flujo o Máquina de Estados:** *[Inserte aquí la imagen del diagrama que explique el lazo principal o el comportamiento del sistema]*
-  Diagrama que explica el lazo principal y el comportamiento del sistema.
+* **Diagrama de Flujo o Máquina de Estados:** El siguiente diagrama representa la secuencia de ejecución del programa y el comportamiento general del sistema, mostrando las decisiones y acciones realizadas por el microcontrolador desde la inicialización hasta el funcionamiento continuo del bastón inteligente.
 ![Diagrama de Flujo / Máquina de Estados](docs/diagrama_software.png)
 
 ---
