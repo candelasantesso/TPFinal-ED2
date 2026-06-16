@@ -102,13 +102,14 @@ Manejo de errores: Al ingresar caracteres inválidos, letras, o números fuera d
 
 ---
 
-## 6. Estructura del Repositorio (Común)
-El repositorio debe mantener obligatoriamente la siguiente estructura limpia (¡Recuerden configurar correctamente el `.gitignore` para no subir carpetas temporales como `Debug/`, `Release/` o archivos `.p1` / `.d`!).
+## 📂 6. Estructura del Repositorio
+
+El repositorio mantiene la siguiente estructura limpia, habiendo configurado el archivo `.gitignore` correspondiente para omitir los archivos temporales de compilación:
 
 ```text
-├── firmware/          # Código fuente del proyecto (MPLABX / MCUXpresso / STM32Cube)
-│   ├── src/           # Archivos de código (.c)
-│   └── inc/           # Archivos de cabecera (.h)
-├── hardware/          # Archivos de diseño (KiCad/Altium), esquemáticos en PDF/Imagen y BOM
-├── docs/              # Datasheets clave, imágenes del README, notas de aplicación
-└── README.md          # Este archivo de presentación
+├── firmware/          # Proyecto de MPLAB X y código fuente
+│   ├── src/           # Archivos de código fuente (.asm)
+│   └── inc/           # Archivos de cabecera e inclusión (.inc)
+├── hardware/          # Archivos de diseño, esquemáticos en PDF/Imagen y diagramas
+├── docs/              # Datasheets clave del microcontrolador y componentes
+└── README.md          # Este archivo de presentación e informe técnico
