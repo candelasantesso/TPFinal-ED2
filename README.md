@@ -50,7 +50,8 @@ Como consideraciones de diseño, se utilizaron etapas de adaptación entre los d
 
 ### Arquitectura de Software (Firmware)
 * **Diagrama de Flujo o Máquina de Estados:** *[Inserte aquí la imagen del diagrama que explique el lazo principal o el comportamiento del sistema]*
-  `![Diagrama de Flujo / Máquina de Estados] (docs/diagrama_software.png.png)
+  Diagrama que explica el lazo principal y el comportamiento del sistema.
+![Diagrama de Flujo / Máquina de Estados](docs/diagrama_software.png)
 
 ---
 
