@@ -39,7 +39,7 @@ El objetivo del sistema es brindar una advertencia temprana ante la presencia de
 ## 2. Arquitectura del Sistema: Hardware y Software (Común)
 
 ### Hardware & Interconexión
- * **Diagrama de Bloques:** Muestra cómo están conectados los distintos módulos electrónicos del sistema y cómo circula la información entre ellos. Es una vista general, sin entrar en detalles de conexiones pin a pin. ¿Qué componentes tiene el sistema y cómo se comunican entre sí? [Insertar imagen o link al diagrama de bloques del hardware]
+ * **Diagrama de Bloques:** Muestra cómo están conectados los distintos módulos electrónicos del sistema y cómo circula la información entre ellos. Es una vista general, sin entrar en detalles de conexiones pin a pin. ¿Qué componentes tiene el sistema y cómo se comunican entre sí? [Insertar imagen o link al diagrama de bloques del hardware] (hardware/diagrama de bloques.png)
 * **Esquemático del Circuito:** *[Inserte aquí la captura de imagen/render del esquemático completo desarrollado en KiCad/Altium]*
   `![Esquemático Completo](hardware/esquematico.png)
 
