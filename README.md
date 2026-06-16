@@ -49,8 +49,8 @@ Circuito compuesto por un microcontrolador PIC que recibe la señal analógica d
 Como consideraciones de diseño, se utilizaron etapas de adaptación entre los distintos módulos y una etapa de potencia para accionar el motor vibrador mediante PWM. Además, se contempla el uso de un diodo de protección para absorber los picos de tensión generados por la carga inductiva del motor y garantizar un funcionamiento seguro del circuito.
 
 ### Arquitectura de Software (Firmware)
-* **Diagrama de Flujo o Máquina de Estados:** DIAGRAMA DE FLUJOS Q HAY EN CANVA *[Inserte aquí la imagen del diagrama que explique el lazo principal o el comportamiento del sistema]*
-  `![Diagrama de Flujo / Máquina de Estados](docs/diagrama_software.png)`
+* **Diagrama de Flujo o Máquina de Estados:** *[Inserte aquí la imagen del diagrama que explique el lazo principal o el comportamiento del sistema]*
+  `![Diagrama de Flujo / Máquina de Estados] (docs/diagrama_software.png)
 
 ---
 
