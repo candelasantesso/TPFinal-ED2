@@ -88,15 +88,25 @@ Modo de espera (sin activación del motor): aproximadamente 50–80 mA.
 ## 5. Ensayos, Pruebas y Resultados (Común)
 Demuestren con datos empíricos que el sistema funciona correctamente. **Es obligatorio incluir registro visual**.
 
-* **Pruebas Funcionales Realizadas:**
-* Validacion del ADC y conversión a cm: Se varió el voltaje de entrada en el pin AN0 mediante un potenciómetro, para simular la señal analógica del sensor SHARP. Se corroboró que el programa convierte exitosamente la lectura a cm y se muostraban correctamente en los displays multiplexados.
-* Test de Límites y Seguridad (UART): Se enviaron múltiples tramas de datos desde la terminal serial de la PC a 9600 baudios.
-Comportamiento esperado: Al ingresar valores dentro del rango seguro (ej: "45"), el sistema actualiza el umbral y muestra L-45 en los displays.
+Para comprobar el correcto funcionamiento del bastón inteligente, primero se realizaron pruebas por separado sobre cada uno de los módulos del sistema. Una vez verificado que cada parte funcionaba correctamente, se procedió a integrar todo el firmware y realizar las pruebas finales del proyecto.
 
-Manejo de errores: Al ingresar caracteres inválidos, letras, o números fuera de rango (menores a 10 o mayores a 80), el sistema rechaza el dato, mantiene el umbral anterior y alerta mostrando Err- en el display, demostrando un software robusto.
+### Pruebas funcionales realizadas
 
-* Prueba del Actuador (PWM): Se evaluó la respuesta del módulo CCP1. Al simular que la distancia medida caía por debajo del umbral configurado (situación de colisión), el microcontrolador apagó inmediatamente el motor (Duty Cycle = 0%). Al recuperar una distancia segura, el motor reanudó su giro.
-* **Evidencia Fotográfica y Gráficos:** * *Capturas de instrumental:* [Insertar capturas de Osciloscopio, Analizador Lógico o Terminal Serie]
+**Prueba del conversor ADC:**
+Para verificar la lectura analógica del sensor de distancia, se utilizó un potenciómetro conectado al pin AN0 simulando la señal del sensor Sharp. Con el fin de observar fácilmente los cambios en la lectura, se implementó una prueba con LEDs que se iban encendiendo de manera progresiva según el valor de tensión aplicado. Esto permitió confirmar que el módulo ADC estaba realizando correctamente la conversión de la señal y que convertía esos valores en una distancia en centímetros de forma adecuada.
+
+**Prueba del módulo PWM:**
+Antes de conectar el motor vibrador, se probó el funcionamiento de la salida PWM utilizando un LED conectado al pin RC2. Al modificar el ciclo de trabajo desde el programa, se observó que la intensidad del LED aumentaba y disminuía de forma gradual, verificando así el correcto funcionamiento del Timer2 y del módulo PWM.
+
+**Prueba de comunicación UART:**
+La comunicación serial se ensayó conectando el PIC a una terminal en la computadora configurada a 9600 baudios. Se comprobó que el sistema podía enviar y recibir datos correctamente, sin pérdidas de información, permitiendo ingresar el límite de distancia y visualizar los mensajes de respuesta.
+
+**Prueba de integración del sistema:**
+Luego de validar cada módulo individualmente, se integró todo el sistema para verificar su funcionamiento conjunto. Se comprobó que el usuario podía configurar la distancia límite mediante la UART y que dicho valor se mostraba correctamente en los displays multiplexados. Además, al simular que un obstáculo se encontraba por debajo de la distancia configurada, el sistema respondía desactivando la señal PWM y actuando según la lógica programada, retomando su funcionamiento normal cuando el obstáculo se alejaba.
+
+### Evidencia fotográfica y resultados:
+Para respaldar las pruebas realizadas, se incluyen imágenes de la terminal serie mostrando la recepción de datos y los mensajes generados por el microcontrolador, fotografías del circuito implementado en protoboard con el PIC16F887 y los displays de siete segmentos, y capturas obtenidas con el osciloscopio donde se observan las señales generadas durante el funcionamiento del sistema.
+ * *Capturas de instrumental:* [Insertar capturas de Osciloscopio, Analizador Lógico o Terminal Serie]
   * *Foto del Prototipo Real:* [Insertar foto del hardware final cableado/armado en funcionamiento]
 - Capturas de la Terminal Serie (UART): En la siguiente imagen se observa la recepción de datos y los mensajes de respuesta del PIC (LIMITE: XX y ERROR).
 
