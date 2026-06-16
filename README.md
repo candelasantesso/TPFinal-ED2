@@ -39,7 +39,7 @@ El objetivo del sistema es brindar una advertencia temprana ante la presencia de
 ## 2. Arquitectura del Sistema: Hardware y Software (Común)
 
 ### Hardware & Interconexión
- * **Diagrama de Bloques:** Muestra cómo están conectados los distintos módulos electrónicos del sistema y cómo circula la información entre ellos. Es una vista general, sin entrar en detalles de conexiones pin a pin. ¿Qué componentes tiene el sistema y cómo se comunican entre sí? [Insertar imagen o link al diagrama de bloques del hardware] (hardware/DIAGRAMA DE BLOQUES.png)
+ * **Diagrama de Bloques:** Muestra cómo están conectados los distintos módulos electrónicos del sistema y cómo circula la información entre ellos. Es una vista general, sin entrar en detalles de conexiones pin a pin. ¿Qué componentes tiene el sistema y cómo se comunican entre sí? ![Diagrama de Bloques del Hardware](hardware/DIAGRAMA%20DE%20BLOQUES.png)
 * **Esquemático del Circuito:** *[Inserte aquí la captura de imagen/render del esquemático completo desarrollado en KiCad/Altium]*
   `![Esquemático Completo](hardware/esquematico.png)
 
@@ -66,7 +66,7 @@ Modo de espera (sin activación del motor): aproximadamente 50–80 mA.
 * **Configuración de Bits (Fuses Críticos):**
   * *Oscilador:* HS (Cristal interno de 4MHz)
   * *Watchdog Timer (WDT):* OFF
-  * *Master Clear (MCLRE):* [Ej: ON (Pin externo) / OFF (Digital IO)]
+  * *Master Clear (MCLRE):* OFF 
 * **Periféricos Internos Utilizados:** ADC, EUSART (UART), módulo PWM y temporizadores (TMR0 y TMR2).
 * **Gestión de Interrupciones:** Se utilizan interrupciones mediante T0IF, para priorizar la multiplexación de los displays mediante desbordamientos del TIMER 0.
 
