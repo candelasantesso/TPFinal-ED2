@@ -63,9 +63,9 @@ Como consideraciones de diseño, se utilizaron etapas de adaptación entre los d
 ### Parámetros de Alimentación y Consumo (Común a ambas materias)
 * **Tensión de operación del sistema:** 5 V para PIC; 3,3 V para motor vibrador.
 * **Método de alimentación:** Alimentación por USB (5V) para PIC y alimentación por pilas para Motor Vibrador.
-* **Consumo estimado o medido:** * En modo activo (motor encendido y displays en funcionamiento): aproximadamente 150–250 mA, (dependiendo del consumo del motor y de los displays).
+* **Consumo estimado o medido:** En modo activo (motor encendido y displays en funcionamiento): aproximadamente 150–250 mA, (dependiendo del consumo del motor y de los displays).
 Modo de espera (sin activación del motor): aproximadamente 50–80 mA.
-* **Herramientas de Software:** MPLAB X IDE v5.35 y compilador XC8 [vX.XX].
+* **Herramientas de Software:** MPLAB X IDE v5.35 y compilador XC8.
 * **Hardware de Programación/Depuración:** PICkit 3.
 * **Configuración de Bits (Fuses Críticos):**
   * *Oscilador:* HS (Cristal interno de 4MHz)
