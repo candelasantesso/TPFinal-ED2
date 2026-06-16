@@ -85,9 +85,19 @@ Modo de espera (sin activación del motor): aproximadamente 50–80 mA.
 ## 5. Ensayos, Pruebas y Resultados (Común)
 Demuestren con datos empíricos que el sistema funciona correctamente. **Es obligatorio incluir registro visual**.
 
-* **Pruebas Funcionales Realizadas:** Detallen los ensayos (Ej: "Se inyectó una señal controlada para medir la precisión del ADC...").
+* **Pruebas Funcionales Realizadas:**
+* Validacion del ADC y conversión a cm: Se varió el voltaje de entrada en el pin AN0 mediante un potenciómetro, para simular la señal analógica del sensor SHARP. Se corroboró que el programa convierte exitosamente la lectura a cm y se muostraban correctamente en los displays multiplexados.
+* Test de Límites y Seguridad (UART): Se enviaron múltiples tramas de datos desde la terminal serial de la PC a 9600 baudios.
+Comportamiento esperado: Al ingresar valores dentro del rango seguro (ej: "45"), el sistema actualiza el umbral y muestra L-45 en los displays.
+
+Manejo de errores: Al ingresar caracteres inválidos, letras, o números fuera de rango (menores a 10 o mayores a 80), el sistema rechaza el dato, mantiene el umbral anterior y alerta mostrando Err- en el display, demostrando un software robusto.
+
+* Prueba del Actuador (PWM): Se evaluó la respuesta del módulo CCP1. Al simular que la distancia medida caía por debajo del umbral configurado (situación de colisión), el microcontrolador apagó inmediatamente el motor (Duty Cycle = 0%). Al recuperar una distancia segura, el motor reanudó su giro.
 * **Evidencia Fotográfica y Gráficos:** * *Capturas de instrumental:* [Insertar capturas de Osciloscopio, Analizador Lógico o Terminal Serie]
   * *Foto del Prototipo Real:* [Insertar foto del hardware final cableado/armado en funcionamiento]
+- Capturas de la Terminal Serie (UART): En la siguiente imagen se observa la recepción de datos y los mensajes de respuesta del PIC (LIMITE: XX y ERROR).
+
+- Foto del Prototipo Real: Circuito final montado en protoboard, mostrando el PIC16F887, los displays de 7 segmentos multiplexados y el sistema de comunicaciones.
 
 ---
 
