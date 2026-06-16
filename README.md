@@ -15,10 +15,10 @@ El objetivo del sistema es brindar una advertencia temprana ante la presencia de
 
 ### Alcances del Proyecto.
 * **El sistema es capaz de:**
- - Medir la distancia a los obstáculos mediante un sensor infrarrojo.
- - Mostrar en displays la distancia medida y el modo de funcionamiento seleccionado.
- - Configurar manualmente la distancia de alerta.
- - Mostrar cuando el usuario seleccione una distancia incorrecta.
+  - Medir la distancia a los obstáculos mediante un sensor infrarrojo.
+  - Mostrar en displays la distancia medida y el modo de funcionamiento seleccionado.
+  - Configurar manualmente la distancia de alerta.
+  - Mostrar cuando el usuario seleccione una distancia incorrecta.
   - Permitir seleccionar modo Casa o Calle.
   - Activar una señal de advertencia cuando la distancia al obstáculo es mayor que la configurada.
   - Enviar información del estado del sistema y de la distancia medida por UART.
