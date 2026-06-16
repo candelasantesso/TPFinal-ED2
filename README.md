@@ -22,13 +22,13 @@ El objetivo del sistema es brindar una advertencia temprana ante la presencia de
   - Permitir seleccionar modo Casa o Calle.
   - Activar una señal de advertencia cuando la distancia al obstáculo es mayor que la configurada.
   - Enviar información del estado del sistema y de la distancia medida por UART.
-* **El sistema NO incluye (Fuera de alcance):**
+* **El sistema NO incluye:**
   - Detección del tipo de obstáculo.
   - Reconocimiento de desniveles del terreno.
   - Almacenamiento de datos o historial de mediciones.
   - Brindar conectividad inalámbrica (mediante Wi-Fi o Bluetooth).
 
-### Posibles Etapas Siguientes (Líneas Futuras)
+### Posibles Etapas Siguientes
 
 * Reducir el tamaño del circuito integrando los componentes en una única placa, facilitando su incorporación dentro del bastón y mejorando la portabilidad.
 * Incorporar una batería recargable y un sistema de bajo consumo para aumentar la autonomía del dispositivo.
@@ -36,7 +36,7 @@ El objetivo del sistema es brindar una advertencia temprana ante la presencia de
 * Incorporar sensores adicionales para mejorar la detección de obstáculos y reducir errores de medición del sensor infrarrojo.
 --
 
-## 2. Arquitectura del Sistema: Hardware y Software (Común)
+## 2. Arquitectura del Sistema: Hardware y Software
 
 ### Hardware & Interconexión
 Esta sección presenta la arquitectura de hardware del sistema desarrollado, describiendo los módulos electrónicos que lo componen, la forma en que se interconectan y el flujo de información entre ellos. Además, se incluyen el diagrama de bloques, el esquemático del circuito y las principales consideraciones adoptadas durante el diseño.
@@ -58,9 +58,9 @@ Como consideraciones de diseño, se utilizaron etapas de adaptación entre los d
 
 ---
 
-## 3. Especificaciones Eléctricas, Alimentación y Entorno (Específico por Asignatura)
+## 3. Especificaciones Eléctricas, Alimentación y Entorno
 
-### Parámetros de Alimentación y Consumo (Común a ambas materias)
+### Parámetros de Alimentación y Consumo:
 * **Tensión de operación del sistema:** 5 V para PIC; 3,3 V para motor vibrador.
 * **Método de alimentación:** Alimentación por USB (5V) para PIC y alimentación por pilas para Motor Vibrador.
 * **Consumo estimado o medido:** En modo activo (motor encendido y displays en funcionamiento): aproximadamente 150–250 mA, (dependiendo del consumo del motor y de los displays).
@@ -85,7 +85,7 @@ Modo de espera (sin activación del motor): aproximadamente 50–80 mA.
 
 ---
 
-## 5. Ensayos, Pruebas y Resultados (Común)
+## 5. Ensayos, Pruebas y Resultados
 Demuestren con datos empíricos que el sistema funciona correctamente. **Es obligatorio incluir registro visual**.
 
 Para comprobar el correcto funcionamiento del bastón inteligente, primero se realizaron pruebas por separado sobre cada uno de los módulos del sistema. Una vez verificado que cada parte funcionaba correctamente, se procedió a integrar todo el firmware y realizar las pruebas finales del proyecto.
