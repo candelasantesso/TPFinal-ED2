@@ -64,8 +64,9 @@ Como consideraciones de diseño, se utilizaron etapas de adaptación entre los d
 * **Tensión de operación del sistema:** 5 V para PIC; 3,3 V para motor vibrador.
 * **Método de alimentación:** Alimentación por USB (5V) para PIC y alimentación por pilas para Motor Vibrador.
 * **Consumo estimado o medido:**
-* - MODO ACTIVO: El motor se alimenta mediante una fuente independiente, por lo que su consumo de 500 mA no se incluye en el cálculo del circuito de control. El consumo de la placa con el PIC es de aproximadamente 60 mA.
+ - MODO ACTIVO: El motor se alimenta mediante una fuente independiente, por lo que su consumo de 500 mA no se incluye en el cálculo del circuito de control. El consumo de la placa con el PIC es de aproximadamente 60 mA.
   - MODO BAJO (sin activación de displays): aproximadamente de 5 mA a 15 mA.
+
  Todos estos valores fueron considerados según las indicaciones de su hoja de datos.
 * **Herramientas de Software:** MPLAB X IDE v5.35 y compilador AN1310.
 * **Hardware de Programación/Depuración:** PICkit 3.
