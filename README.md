@@ -68,7 +68,7 @@ Modo de espera (sin activación del motor): aproximadamente 50–80 mA.
 * **Herramientas de Software:** MPLAB X IDE v5.35 y compilador AN1310.
 * **Hardware de Programación/Depuración:** PICkit 3.
 * **Configuración de Bits (Fuses Críticos):**
-  * *Oscilador:* HS (Cristal externo de 4MHz)
+  * *Oscilador:* XT (Cristal externo de 4MHz)
   * *Watchdog Timer (WDT):* OFF
   * *Master Clear (MCLRE):* OFF 
 * **Periféricos Internos Utilizados:** ADC, EUSART (UART), módulo PWM y temporizadores (TMR0 y TMR2).
