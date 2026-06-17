@@ -121,7 +121,7 @@ Para respaldar las pruebas realizadas, se incluyen imágenes de la terminal seri
 - Capturas de la Terminal Serie (UART):En la siguiente imagen se observa la recepción de datos y los mensajes de respuesta del PIC (`LIMITE: XX` y `ERROR`).
 Con el fin de lograr un mayor entendimiento, se dejaron a la vista los caracteres presionados en el teclado.
 ![Funcionamiento del módulo UART](hardware/modulo_uart.jpg)
-- Foto del Prototipo Real: Circuito final montado en protoboard, mostrando el PIC16F887, los displays de 7 segmentos multiplexados y el sistema de comunicaciones.
+- Foto del Prototipo Real: Circuito final montado en protoboard, en funcionamiento mostrando el modo CASA ![Funcionamiento del circuito](hardware/prueba.jpg)
 
 ---
 
