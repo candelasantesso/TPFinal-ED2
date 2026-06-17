@@ -42,7 +42,10 @@ El objetivo del sistema es brindar una advertencia temprana ante la presencia de
 Esta sección presenta la arquitectura de hardware del sistema desarrollado, describiendo los módulos electrónicos que lo componen, la forma en que se interconectan y el flujo de información entre ellos. Además, se incluyen el diagrama de bloques, el esquemático del circuito y las principales consideraciones adoptadas durante el diseño.
 
  * **Diagrama de Bloques:**
-Muestra la estructura general del sistema, identificando los distintos módulos que lo integran y la comunicación existente entre ellos. Su objetivo es brindar una visión global del funcionamiento del hardware sin detallar las conexiones eléctricas específicas. ![Diagrama de Bloques del Hardware](hardware/DIAGRAMA%20DE%20BLOQUES.png)
+Muestra la estructura general del sistema, identificando los distintos módulos que lo integran y la comunicación existente entre ellos. Su objetivo es brindar una visión global del funcionamiento del hardware sin detallar las conexiones eléctricas específicas.
+
+Si se desea ver en detalle: https://www.canva.com/design/DAHMmHZdgNg/sqTB3Wvxsx8RAnOKdBW_Rg/edit
+ ![Diagrama de Bloques del Hardware](hardware/DIAGRAMA%20DE%20BLOQUES.png)
 * **Esquemático del Circuito:** Circuito esquemático completo del circuito, desarrollado en Proteus 8 Professional, donde se representan las conexiones entre todos los componentes electrónicos que conforman el sistema.
   - **Aclaración:** El sensor Sharp fue reemplazado por un potenciómetro que simule su señal ya que el mismo no se encuentra como parte de la librería de Proteus.
   ![Esquemático Completo](hardware/esquematico.png)
@@ -54,6 +57,8 @@ Como consideraciones de diseño, se utilizaron etapas de adaptación entre los d
 
 ### Arquitectura de Software (Firmware)
 * **Diagrama de Flujo o Máquina de Estados:** El siguiente diagrama representa la secuencia de ejecución del programa y el comportamiento general del sistema, mostrando las decisiones y acciones realizadas por el microcontrolador desde la inicialización hasta el funcionamiento continuo del bastón inteligente.
+
+* Para ver en mayor detalle: https://www.canva.com/design/DAHMlcTeTSw/iDHq3daWvmmjuNOY-3AmFA/edit 
 ![Diagrama de Flujo / Máquina de Estados](docs/diagrama_software.png)
 
 ---
