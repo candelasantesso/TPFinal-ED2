@@ -24,6 +24,7 @@ El objetivo del sistema es brindar una advertencia temprana ante la presencia de
   - Enviar información del estado del sistema y de la distancia medida por UART.
 * **El sistema NO incluye:**
   - Detección del tipo de obstáculo.
+  - Detectar distancias menores a 10cm y mayores a 80cm.
   - Reconocimiento de desniveles del terreno.
   - Almacenamiento de datos o historial de mediciones.
   - Brindar conectividad inalámbrica (mediante Wi-Fi o Bluetooth).
@@ -34,7 +35,6 @@ El objetivo del sistema es brindar una advertencia temprana ante la presencia de
 * Incorporar una batería recargable y un sistema de bajo consumo para aumentar la autonomía del dispositivo.
 * Agregar conectividad Bluetooth o una aplicación móvil para configurar el sistema y monitorear su funcionamiento de forma inalámbrica.
 * Incorporar sensores adicionales para mejorar la detección de obstáculos y reducir errores de medición del sensor infrarrojo.
---
 
 ## 2. Arquitectura del Sistema: Hardware y Software
 
