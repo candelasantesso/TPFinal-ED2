@@ -63,14 +63,16 @@ Como consideraciones de diseño, se utilizaron etapas de adaptación entre los d
 ### Parámetros de Alimentación y Consumo:
 * **Tensión de operación del sistema:** 5 V para PIC; 3,3 V para motor vibrador.
 * **Método de alimentación:** Alimentación por USB (5V) para PIC y alimentación por pilas para Motor Vibrador.
-* **Consumo estimado o medido:** En modo activo (motor encendido y displays en funcionamiento): aproximadamente 150–250 mA, (dependiendo del consumo del motor y de los displays).
-Modo de espera (sin activación del motor): aproximadamente 50–80 mA.
+* **Consumo estimado o medido:**
+* - MODO ACTIVO: El motor se alimenta mediante una fuente independiente, por lo que su consumo de 500 mA no se incluye en el cálculo del circuito de control. El consumo de la placa con el PIC es de aproximadamente 60 mA.
+  - MODO BAJO (sin activación de displays): aproximadamente de 5 mA a 15 mA.
+ Todos estos valores fueron considerados según las indicaciones de su hoja de datos.
 * **Herramientas de Software:** MPLAB X IDE v5.35 y compilador AN1310.
 * **Hardware de Programación/Depuración:** PICkit 3.
 * **Configuración de Bits (Fuses Críticos):**
   * *Oscilador:* XT (Cristal externo de 4MHz)
   * *Watchdog Timer (WDT):* OFF
-  * *Master Clear (MCLRE):* OFF 
+  * *Master Clear (MCLRE):* ON 
 * **Periféricos Internos Utilizados:** ADC, EUSART (UART), módulo PWM y temporizadores (TMR0 y TMR2).
 * **Gestión de Interrupciones:** Se utilizan interrupciones mediante T0IF, para priorizar la multiplexación de los displays mediante desbordamientos del TIMER 0.
 
