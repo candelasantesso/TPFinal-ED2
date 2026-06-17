@@ -117,7 +117,7 @@ Para respaldar las pruebas realizadas, se incluyen imágenes de la terminal seri
 
 * Osciloscopio mostrando la señal PWM activada cuando la distancia medida es menor al umbral establecido:
 * ![Osciloscopio mostrando la señal con PWM activada](hardware/pwm_activado.png)
-  * *Foto del Prototipo Real:* ![Prototipo fisico](circuito_fisico.jpg)
+  * *Foto del Prototipo Real:* ![Prototipo fisico](hardware/circuito_fisico.jpg)
 - Capturas de la Terminal Serie (UART):En la siguiente imagen se observa la recepción de datos y los mensajes de respuesta del PIC (`LIMITE: XX` y `ERROR`).
 Con el fin de lograr un mayor entendimiento, se dejaron a la vista los caracteres presionados en el teclado.
 ![Funcionamiento del módulo UART](hardware/modulo_uart.jpg)
