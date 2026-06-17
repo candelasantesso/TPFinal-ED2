@@ -104,12 +104,14 @@ Luego de validar cada módulo individualmente, se integró todo el sistema para 
 
 ### Evidencia fotográfica y resultados:
 Para respaldar las pruebas realizadas, se incluyen imágenes de la terminal serie mostrando la recepción de datos y los mensajes generados por el microcontrolador, fotografías del circuito implementado en protoboard con el PIC16F887 y los displays de siete segmentos, y capturas obtenidas con el osciloscopio donde se observan las señales generadas durante el funcionamiento del sistema.
-   * *Capturas de instrumental:*  ![Osciloscopio mostrando la señal con PWM desactivada](hardware/pwm_desactivado.png)
+   * *Capturas de instrumental:*
+   * Osciloscopio mostrando la señal PWM desactivada, por distancia mayor al umbral establecido: ![Osciloscopio mostrando la señal con PWM desactivada](hardware/pwm_desactivado.png)
 
-![Osciloscopio mostrando la señal con PWM activada](hardware/pwm_activado.png)
+* Osciloscopio mostrando la señal PWM activada cuando la distancia medida es menor al umbral establecido:
+* ![Osciloscopio mostrando la señal con PWM activada](hardware/pwm_activado.png)
   * *Foto del Prototipo Real:* [Insertar foto del hardware final cableado/armado en funcionamiento]
 - Capturas de la Terminal Serie (UART):En la siguiente imagen se observa la recepción de datos y los mensajes de respuesta del PIC (`LIMITE: XX` y `ERROR`).
-
+Con el fin de lograr un mayor entendimiento, se dejaron a la vista los caracteres presionados en el teclado.
 ![Funcionamiento del módulo UART](hardware/modulo_uart.jpg)
 - Foto del Prototipo Real: Circuito final montado en protoboard, mostrando el PIC16F887, los displays de 7 segmentos multiplexados y el sistema de comunicaciones.
 
