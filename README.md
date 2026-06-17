@@ -65,10 +65,10 @@ Como consideraciones de diseño, se utilizaron etapas de adaptación entre los d
 * **Método de alimentación:** Alimentación por USB (5V) para PIC y alimentación por pilas para Motor Vibrador.
 * **Consumo estimado o medido:** En modo activo (motor encendido y displays en funcionamiento): aproximadamente 150–250 mA, (dependiendo del consumo del motor y de los displays).
 Modo de espera (sin activación del motor): aproximadamente 50–80 mA.
-* **Herramientas de Software:** MPLAB X IDE v5.35 y compilador XC8.
+* **Herramientas de Software:** MPLAB X IDE v5.35 y compilador AN1310.
 * **Hardware de Programación/Depuración:** PICkit 3.
 * **Configuración de Bits (Fuses Críticos):**
-  * *Oscilador:* HS (Cristal interno de 4MHz)
+  * *Oscilador:* HS (Cristal externo de 4MHz)
   * *Watchdog Timer (WDT):* OFF
   * *Master Clear (MCLRE):* OFF 
 * **Periféricos Internos Utilizados:** ADC, EUSART (UART), módulo PWM y temporizadores (TMR0 y TMR2).
@@ -86,8 +86,6 @@ Modo de espera (sin activación del motor): aproximadamente 50–80 mA.
 ---
 
 ## 5. Ensayos, Pruebas y Resultados
-Demuestren con datos empíricos que el sistema funciona correctamente. **Es obligatorio incluir registro visual**.
-
 Para comprobar el correcto funcionamiento del bastón inteligente, primero se realizaron pruebas por separado sobre cada uno de los módulos del sistema. Una vez verificado que cada parte funcionaba correctamente, se procedió a integrar todo el firmware y realizar las pruebas finales del proyecto.
 
 ### Pruebas funcionales realizadas
@@ -106,10 +104,10 @@ Luego de validar cada módulo individualmente, se integró todo el sistema para 
 
 ### Evidencia fotográfica y resultados:
 Para respaldar las pruebas realizadas, se incluyen imágenes de la terminal serie mostrando la recepción de datos y los mensajes generados por el microcontrolador, fotografías del circuito implementado en protoboard con el PIC16F887 y los displays de siete segmentos, y capturas obtenidas con el osciloscopio donde se observan las señales generadas durante el funcionamiento del sistema.
- * *Capturas de instrumental:* [Insertar capturas de Osciloscopio, Analizador Lógico o Terminal Serie]
+   * *Capturas de instrumental:*  ![Osciloscopio mostrando la señal de PWM desactivada.](hardware/modulo_pwm.png) ![Señal de PWM activada.](hardware/pwm_funcionamiento.png)
   * *Foto del Prototipo Real:* [Insertar foto del hardware final cableado/armado en funcionamiento]
 - Capturas de la Terminal Serie (UART): En la siguiente imagen se observa la recepción de datos y los mensajes de respuesta del PIC (LIMITE: XX y ERROR).
-
+![Funcionamiento del módulo UART](hardware/modulo_uart.png)
 - Foto del Prototipo Real: Circuito final montado en protoboard, mostrando el PIC16F887, los displays de 7 segmentos multiplexados y el sistema de comunicaciones.
 
 ---
