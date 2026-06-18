@@ -81,7 +81,7 @@ Como consideraciones de diseño, se utilizaron etapas de adaptación entre los d
   * *Master Clear (MCLRE):* ON 
 * **Periféricos Internos Utilizados:** ADC, EUSART (UART), módulo PWM y temporizadores (TMR0 y TMR2).
 * **Gestión de Interrupciones:** Se utilizan interrupciones mediante T0IF, para priorizar la multiplexación de los displays mediante desbordamientos del TIMER 0.
-
+* **Curva del sensor Sharp:**  ![Curva del Sharp](hardware/curva_sharp)
 ---
 
 ## 4. Proceso de Integración y Desarrollo.
